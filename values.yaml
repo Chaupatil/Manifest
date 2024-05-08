@@ -1,8 +1,8 @@
 deployment:
   replicas: 2
   image:
-    owner: <dockerhub-username>
-    repository: <image-name>
+    owner: patilchau
+    repository: pythonflaskapp
     tag: 9fc652bfc6d4cbc0a9d388b28e624e4012dab81c
   container:
     name: pythonflaskapp
