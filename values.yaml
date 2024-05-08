@@ -1,0 +1,14 @@
+deployment:
+  replicas: 2
+  image:
+    owner: <dockerhub-username>
+    repository: <image-name>
+    tag: 9fc652bfc6d4cbc0a9d388b28e624e4012dab81c
+  container:
+    name: pythonflaskapp
+    port: 80
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30112
